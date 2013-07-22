@@ -1,4 +1,4 @@
-## Quick Start
+#Co
 
 Install Node.js and then:
 
@@ -17,10 +17,12 @@ danach test.html öffnen. die Klassen sind dann unter window.Co erreichbar.
 Tests klappen noch nicht!
 
 Klasse hinzufügen:
-	- Datei unter src/co anlegen
-	- in der Datei die Basisklasse importieren
-	- Klasse exportieren
-	-(sollte automatisiert werden) src/co.js öffnen
-	-(sollte automatisiert werden)angelegte Datei importieren
-	-(sollte automatisiert werden)Klasse exportieren
-	Alles was in src/co.js exportiert wird, ist das "public Interface" von Co
+
+- Datei unter src/co anlegen
+- in der Datei die Basisklasse importieren
+- Klasse exportieren
+- (sollte automatisiert werden) src/co.js öffnen
+- (sollte automatisiert werden)angelegte Datei importieren
+- (sollte automatisiert werden)Klasse exportieren
+
+Alles was in src/co.js exportiert wird, ist das "public Interface" von Co
