@@ -1,3 +1,5 @@
+import {$$} from "jtypes-2.1.0";
+
 var CoClass = $$(function()
 {
 },
@@ -6,7 +8,7 @@ var CoClass = $$(function()
 		//Apply arguments to Constructor
 		//http://stackoverflow.com/questions/1606797/use-of-apply-with-new-operator-is-this-possible/#1608546
 
-		return new (Function.prototype.bind.apply(constructor, args);
+		return new (Function.prototype.bind.apply(this, arguments));
 	},
 	'static extend': function(field, methods){
 		//jtypes will einen constructor
@@ -28,14 +30,17 @@ var CoClass = $$(function()
 
 		var member = [field, methods];
 		for(var i = 0;i<2;i++){
-			for(key in member[i]){
+			for(var key in member[i]){
 				var modifier = key.substring(0,1);
 				var name = key.substring(1);
+				console.log(modifier);
 				if (member[i].hasOwnProperty(key) && keywords.hasOwnProperty(modifier)){
+					console.log("yo");
 					prototype[keywords[modifier]+' '+name] = member[i][key];
 				}
 			}
 		}
+		console.log(prototype);
 
 		//static wird wohl nicht vererbt
 		prototype['static create'] = CoClass.create;
@@ -44,3 +49,5 @@ var CoClass = $$(function()
 		return $$(this,constructor,prototype);
 	}
 });
+
+export CoClass;

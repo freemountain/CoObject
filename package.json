@@ -1,22 +1,19 @@
 {
-  "name": "CoClass",
+  "name": "Co",
   "version": "0.0.1",
-  "description": "CoClass ...",
+  "description": "Co ...",
   "main": "src/gruntdemo.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "",
   "author": "Co",
   "license": "ne fiese",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-jshint": "~0.4.3",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-watch": "~0.4.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-buster": "~0.1.2",
-    "buster": "~0.6.0"
+    "grunt": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-buster": "*",
+    "grunt-es6-module-transpiler": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0"
   }
 }

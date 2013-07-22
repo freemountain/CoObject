@@ -16,9 +16,7 @@
 //     See the License for the specific language governing permissions and
 //                       limitations under the License.
 */
-(function(window, undefined)
-{
-    // ########## STRICT ##########
+// ########## STRICT ##########
 
     // Enable strict mode
     'use strict';
@@ -2396,12 +2394,12 @@
     });
 
     // ########## GLOBALS ##########
-
+/*
     // If the AMD module pattern is being used
     if (typeof define === 'function' && define.amd)
     {
         // Define the module
-        define(function()
+        define('jtypes', function()
         {
             // Return the jTypes reference
             return $$;
@@ -2422,4 +2420,6 @@
         // Define/overwrite the global variable
         window.jTypes = $$;
     }
-})(typeof window !== 'undefined' ? window : {});
+*/
+
+export $$;
