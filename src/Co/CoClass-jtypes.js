@@ -33,14 +33,11 @@ var CoClass = $$(function()
 			for(var key in member[i]){
 				var modifier = key.substring(0,1);
 				var name = key.substring(1);
-				console.log(modifier);
 				if (member[i].hasOwnProperty(key) && keywords.hasOwnProperty(modifier)){
-					console.log("yo");
 					prototype[keywords[modifier]+' '+name] = member[i][key];
 				}
 			}
 		}
-		console.log(prototype);
 
 		//static wird wohl nicht vererbt
 		prototype['static create'] = CoClass.create;
