@@ -4,7 +4,7 @@ config["My tests"] = {
   rootPath: "./",
   environment: "browser",
   sources: [
-    "dist/CoClass.js"
+    "dist/Co.js"
   ],
   tests: [
     "src/**/*.spec.js"

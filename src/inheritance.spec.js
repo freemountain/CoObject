@@ -3,7 +3,8 @@ buster.spec.expose();
 
 describe("Inheritance", function () {
     before(function () {
-        this.TestClass = CoClass.extend({
+
+        this.TestClass = Co.CoClass.extend({
             '+publicCounter': 0,            
 			'#protectedCounter': 0,
             '-privateCounterr': 0
@@ -32,7 +33,7 @@ describe("Inheritance", function () {
 	it('create inherited Object', function(){
 		var o  = this.TestClass.create(1,2,3);
 		expect(o instanceof this.TestClass).toBe(true);
-		expect(o instanceof CoClass).toBe(true);
+		expect(o instanceof Co.CoClass).toBe(true);
 		
 
 	});

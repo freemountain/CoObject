@@ -14,7 +14,12 @@ $ grunt build
 ```
 
 danach test.html öffnen. die Klassen sind dann unter window.Co erreichbar.
-Tests klappen noch nicht!
+
+Testen:
+
+- `$ buster-server &`
+- mit browser angegebene url öffnen, capture klicken
+- `$ buster-test`
 
 Klasse hinzufügen:
 
